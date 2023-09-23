@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="beanmachine.css"/>
+        <title>Starbuzz Bean Machine</title>
+    </head>
+    <body>
+        <h1>Starbuzz Bean Machine</h1>
+        <h2>Заполните следующую форму и нажмите кнопку «Заказать сейчас»,
+            чтобы оформить заказ</h2>
+            <form action="http://starbuzzcoffee.com/processorder.php" method="post">
+                <div class="tableRow">
+                <p>
+                Выберите кофе:
+                </p>
+                <p>
+                <select name="beans">
+                <option value="Домашняя смесь">Домашняя смесь</option>
+                <option value="Боливия">Боливия</option>
+                <option value="Гватемала">Гватемала</option>
+                <option value="Кения">Кения</option>
+                </select>
+                </p>
+                </div>
+                <div class="tableRow">
+                <p>Тип:</p>
+                <p>
+                <input type="radio" name="beantype" value="зерна"> Кофе в зернах<br>
+                <input type="radio" name="beantype" value="молотый" checked> Молотый кофе
+                </p>
+                </div>
+                <div class="tableRow">
+                <p> Количество пакетиков: </p>
+                <p> <input type="number" name="bags" min="1" max="10"> </p>
+                </div>
+                <div class="tableRow label">
+                <p> Доставить к указанной дате: </p>
+                <p> <input type="date" name="date"> </p>
+                </div>
+                <div class="tableRow">
+                <p>Дополнительные услуги:</p>
+                <p>
+                <input type="checkbox" name="extras[]" value="подарочная упаковка"> Подарочная
+                упаковка<br>
+                <input type="checkbox" name="extras[]" value="каталог" checked>
+                Доставка каталога вместе с заказом
+                </p>
+                </div>
+               Ðàçìåùåíèå ýëåìåíòîâ ôîðìû â HTML-ñòðóêòóðå
+               äëÿ ìàêåòà òàáëè÷íîãî ïðåäñòàâëåíèÿ
+               Теперь, когда вы знаете, как расположить элементы формы в макете табличного 
+               представления, вам предстоит протестировать свои навыки по написанию HTML. 
+               Итак, начните печатать прямо сейчас!
+               Это была шутка. Мы не будем заставлять вас все это печатать. В конце концов, эта 
+               глава посвящена формам, а не макету табличного представления. Мы уже набрали весь код сами: вы найдете его в файле styledform.html, который находится 
+               в папке chapter14/starbuzz. Ниже мы добавили несколько замечаний, чтобы 
+               выделить основные части.
+               Это элемент 
+               ‹form›. Мы будем 
+               использовать 
+               данный элемент 
+               для табличной 
+               части представления.
+               Мы используем <div> 
+               с классом tableRow 
+               для каждой из строк 
+               таблицы.
+               См. продолжение кода на следующей странице.
+               Содержимое для каждой 
+               из ячеек вложено 
+               в элемент <p>.
+               Для переключателей 
+               и флажков мы сгруппировали 
+               все элементы и поместили 
+               их в одну ячейку таблицы.
+               структурирование html
+               Готово 
+               к употреблению
+               дальше 693
+               html-формы
+                <div class="tableRow">
+                <p class="heading"> Доставить по адресу: </p>
+                <p></p>
+                </div>
+                <div class="tableRow">
+                <p>Имя:</p>
+                <p><input type="text" name="name" value=""> </p>
+                </div>
+                <div class="tableRow">
+                <p>Адрес:</p>
+                <p> <input type="text" name="address" value=""> </p>
+                </div>
+                <div class="tableRow">
+                <p>Город: </p>
+                <p> <input type="text" name="city" value=""> </p>
+                </div>
+                <div class="tableRow">
+                <p>Страна:</p>
+                <p> <input type="text" name="state" value=""> </p>
+                </div>
+                <div class="tableRow">
+                <p>Почтовый индекс:</p>
+                <p> <input type="text" name="zip" value=""> </p>
+                </div>
+                <div class="tableRow">
+                <p> Телефон: </p>
+                <p> <input type="tel" name="phone" value=""> </p>
+                </div>
+                <div class="tableRow">
+                <p>Комментарии клиентов: </p>
+                <p>
+                <textarea name="comments" rows="10" cols="48"></textarea>
+                </p>
+                </div>
+                <div class="tableRow">
+                <p></p>
+                <p> <input type="submit" value="Заказать сейчас"> </p>
+                </div>
+               </form>
+    </body>
+</html>

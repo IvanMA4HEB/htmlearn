@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Emblema One";
+    src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOneRegular.woff"),
+    url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOneRegular.ttf");
+   }
+   body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: small;
+   }
+   h1 {
+    font-family: "Emblema One";
+    font-size: 220%;
+   }
+   h2 {
+    font-size: 130%;
+    font-weight: normal;
+   }
+   blockquote {
+    font-style: italic;
+   }
+   h1, h2 {
+    color: #cc6600;
+    border-bottom: thin dotted #8 88888;
+   }
+   table {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: thin solid black;
+    caption-side: bottom;
+    border-collapse: collapse;
+   }
+   td, th {
+    border: thin dotted gray;
+    padding: 5px;
+   }
+   caption {
+    font-style: italic;
+    padding-top: 8px;
+   }
+   th {
+    background-color: #cc6600;
+   }
+   tr/* .cellcolor {
+    background-color: #fcba7a;
+   } */
+   li {
+    list-style-image: url(images/backpack.gif); 
+    padding-top: 5px;
+    margin-left: 20px;
+   }
